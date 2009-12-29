@@ -12,8 +12,8 @@ module Machinist
       def make(*args, &block)
         lathe = Lathe.run(Machinist::MongoMapperAdapter, self.new, *args)
         unless Machinist.nerfed?
-          lathe.object.save || raise("Save failed")
-          lathe.object.reload
+          lathe.object.save!
+          lathe.object.reload rescue nil
         end
         lathe.object(&block)
       end

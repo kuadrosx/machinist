@@ -13,6 +13,7 @@ begin
     gem.add_development_dependency "activerecord"
     gem.add_development_dependency "sequel"
     gem.add_development_dependency "dm-core"
+    gem.add_development_dependency "mongo_mapper"
     gem.add_development_dependency "dm-validations"
     gem.add_development_dependency "data_objects"
     gem.add_development_dependency "do_sqlite3"

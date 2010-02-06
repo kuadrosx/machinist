@@ -27,12 +27,14 @@ Gem::Specification.new do |s|
      "lib/machinist/active_record.rb",
      "lib/machinist/blueprints.rb",
      "lib/machinist/data_mapper.rb",
+     "lib/machinist/mongo_mapper.rb",
      "lib/machinist/object.rb",
      "lib/machinist/sequel.rb",
      "lib/sham.rb",
      "machinist.gemspec",
      "spec/active_record_spec.rb",
      "spec/data_mapper_spec.rb",
+     "spec/mongo_mapper_spec.rb",
      "spec/db/.gitignore",
      "spec/db/schema.rb",
      "spec/log/.gitignore",
@@ -47,8 +49,9 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.3.5}
   s.summary = %q{Fixtures aren't fun. Machinist is.}
   s.test_files = [
-    "spec/active_record_spec.rb",
+     "spec/active_record_spec.rb",
      "spec/data_mapper_spec.rb",
+     "spec/mongo_mapper_spec.rb",
      "spec/db/schema.rb",
      "spec/machinist_spec.rb",
      "spec/sequel_spec.rb",
